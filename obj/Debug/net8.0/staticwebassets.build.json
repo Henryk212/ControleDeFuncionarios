@@ -1,11 +1,39 @@
 {
   "Version": 1,
-  "Hash": "kU1yhS+rKCcVAFakn5m8XWpvF9jFj7DoKC3r685Ma/A=",
+  "Hash": "hgWcg8gnn9eRXS4T2+3ljQz+z0eHg+w0LhOGwb3Tjk8=",
   "Source": "ControleDeFuncionarios",
   "BasePath": "_content/ControleDeFuncionarios",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],
-  "DiscoveryPatterns": [],
-  "Assets": []
+  "DiscoveryPatterns": [
+    {
+      "Name": "ControleDeFuncionarios/wwwroot",
+      "Source": "ControleDeFuncionarios",
+      "ContentRoot": "/home/kalilpock/Documentos/c#/funcionarios/ControleDeFuncionarios/wwwroot/",
+      "BasePath": "_content/ControleDeFuncionarios",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "/home/kalilpock/Documentos/c#/funcionarios/ControleDeFuncionarios/wwwroot/css/site.css",
+      "SourceId": "ControleDeFuncionarios",
+      "SourceType": "Discovered",
+      "ContentRoot": "/home/kalilpock/Documentos/c#/funcionarios/ControleDeFuncionarios/wwwroot/",
+      "BasePath": "_content/ControleDeFuncionarios",
+      "RelativePath": "css/site.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/css/site.css"
+    }
+  ]
 }

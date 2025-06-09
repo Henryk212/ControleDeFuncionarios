@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\henri\\OneDrive\\Área de Trabalho\\ControleDeFuncionarios\\ControleDeFuncionarios.csproj": {}
+    "/home/kalilpock/Documentos/c#/funcionarios/ControleDeFuncionarios/ControleDeFuncionarios.csproj": {}
   },
   "projects": {
-    "C:\\Users\\henri\\OneDrive\\Área de Trabalho\\ControleDeFuncionarios\\ControleDeFuncionarios.csproj": {
+    "/home/kalilpock/Documentos/c#/funcionarios/ControleDeFuncionarios/ControleDeFuncionarios.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\henri\\OneDrive\\Área de Trabalho\\ControleDeFuncionarios\\ControleDeFuncionarios.csproj",
+        "projectUniqueName": "/home/kalilpock/Documentos/c#/funcionarios/ControleDeFuncionarios/ControleDeFuncionarios.csproj",
         "projectName": "ControleDeFuncionarios",
-        "projectPath": "C:\\Users\\henri\\OneDrive\\Área de Trabalho\\ControleDeFuncionarios\\ControleDeFuncionarios.csproj",
-        "packagesPath": "C:\\Users\\henri\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\henri\\OneDrive\\Área de Trabalho\\ControleDeFuncionarios\\obj\\",
+        "projectPath": "/home/kalilpock/Documentos/c#/funcionarios/ControleDeFuncionarios/ControleDeFuncionarios.csproj",
+        "packagesPath": "/home/kalilpock/.nuget/packages/",
+        "outputPath": "/home/kalilpock/Documentos/c#/funcionarios/ControleDeFuncionarios/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\henri\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "/home/kalilpock/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
@@ -73,7 +73,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.410/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/8.0.405/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

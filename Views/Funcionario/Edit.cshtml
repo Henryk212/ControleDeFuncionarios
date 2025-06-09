@@ -1,0 +1,50 @@
+@model controleDeFuncionarios.Models.Funcionario
+
+@{
+    ViewData["Title"] = "Editar Funcionário";
+}
+
+<head>
+    <link rel="stylesheet" href="/css/site.css" />
+</head>
+
+<h2>@ViewData["Title"]</h2>
+
+<form asp-action="Edit" method="post">
+    <input type="hidden" name="id" value="@Model.id" />
+    <div class="form-group">
+        <label for="Nome">Nome</label>
+        <input type="text" id="Nome" name="pessoa.nome" value="@Model.pessoa?.nome" class="form-control" required />
+    </div>
+    <div class="form-group">
+        <label for="Cpf">CPF</label>
+        <input type="text" id="Cpf" name="pessoa.cpf" value="@Model.pessoa?.cpf" class="form-control" required />
+    </div>
+    <div class="form-group">
+        <label for="Setor">Setor</label>
+        <input type="text" id="Setor" name="setor.nome" value="@Model.setor?.nome" class="form-control" required />
+    </div>
+    <div class="form-group">
+        <label for="Cargo">Cargo</label>
+        <input type="text" id="Cargo" name="cargo.nome" value="@Model.cargo?.nome" class="form-control" required />
+    </div>
+    <div class="form-group">
+        <label for="Salario">Salário</label>
+        <input type="number" id="Salario" name="salario" value="@Model.salario" class="form-control" required />
+    </div>
+    <div class="form-group">
+        <label for="TipoConta">Tipo de Conta</label>
+        <input type="text" id="TipoConta" name="dadosBancarios.tipoConta" value="@Model.dadosBancarios?.tipoConta"
+            class="form-control" required />
+    </div>
+    <div class="form-group">
+        <label for="Endereco">Endereço</label>
+        <input type="text" id="Endereco" name="endereco.rua" value="@Model.endereco?.Logradouro" class="form-control" required />
+    </div>
+    <div class="form-group">
+        <label for="Numero">Número</label>
+        <input type="text" id="Numero" name="endereco.numero" value="@Model.endereco?.Logradouro" class="form-control" required />
+    </div>
+    <button type="submit" class="btn btn-success">Salvar</button>
+    <a href="/Funcionario" class="btn btn-secondary">Cancelar</a>
+</form>

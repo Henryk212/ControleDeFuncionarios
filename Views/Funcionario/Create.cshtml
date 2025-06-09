@@ -1,0 +1,27 @@
+@model controleDeFuncionarios.Models.Funcionario
+
+@{
+    ViewData["Title"] = "Adicionar Funcionário";
+}
+
+<head>
+    <link rel="stylesheet" href="/css/site.css" />
+</head>
+
+<h2>@ViewData["Title"]</h2>
+
+<form asp-action="Create" method="post">
+    <div class="form-group">
+        <label for="Nome">Nome</label>
+        <input type="text" id="Nome" name="Nome" class="form-control" required />
+    </div>
+    <div class="form-group">
+        <label for="Cpf">CPF</label>
+        <input type="text" id="Cpf" name="Cpf" class="form-control" required />
+    </div>
+    <div class="form-group">
+        <label for="Salario">Salário</label>
+        <input type="number" id="Salario" name="Salario" class="form-control" required />
+    </div>
+    <button type="submit" class="btn btn-success">Salvar</button>
+</form>

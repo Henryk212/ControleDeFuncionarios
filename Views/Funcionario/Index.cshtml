@@ -1,0 +1,78 @@
+@model IEnumerable<controleDeFuncionarios.Models.Funcionario>
+
+@{
+    ViewData["Title"] = "Lista de Funcionários";
+}
+
+<head>
+    <link rel="stylesheet" href="/css/site.css" />
+</head>
+
+<h2>@ViewData["Title"]</h2>
+
+<a href="/Funcionario/Create" class="btn btn-success">Adicionar Funcionário</a>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Nome</th>
+            <th>Setor</th>
+            <th>Cargo</th>
+            <th>Salário</th>
+            <th>Dados Bancários</th>
+            <th>Ações</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var funcionario in Model)
+        {
+            <tr>
+                <td>@funcionario.id</td>
+                <td>@funcionario.pessoa?.nome</td>
+                <td>@funcionario.setor?.nome</td>
+                <td>@funcionario.cargo?.nome</td>
+                <td>@funcionario.salario.ToString("C")</td>
+                <td>@funcionario.dadosBancarios?.tipoConta</td>
+                <td>
+                    <a href="/Funcionario/Edit/@funcionario.id" class="btn btn-primary">Editar</a>
+                    <button class="btn btn-danger btn-remove" data-id="@funcionario.id">Remover</button>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const removeButtons = document.querySelectorAll(".btn-remove");
+
+        removeButtons.forEach(button => {
+            button.addEventListener("click", async function (event) {
+                event.preventDefault(); // Impede o redirecionamento
+
+                const funcionarioId = this.getAttribute("data-id");
+
+                const confirmed = confirm("Tem certeza que deseja remover este funcionário?");
+                if (!confirmed) return;
+
+                try {
+                    const response = await fetch(`/Funcionario/Delete/${funcionarioId}`, {
+                        method: "DELETE"
+                    });
+
+                    if (response.ok) {
+                        // Remove a linha da tabela
+                        this.closest("tr").remove();
+                        alert("Funcionário removido com sucesso!");
+                    } else {
+                        alert("Erro ao remover funcionário.");
+                    }
+                } catch (error) {
+                    console.error("Erro ao remover funcionário:", error);
+                    alert("Erro ao remover funcionário.");
+                }
+            });
+        });
+    });
+</script>

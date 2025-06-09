@@ -17,11 +17,27 @@ build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = ControleDeFuncionarios
 build_property.RootNamespace = ControleDeFuncionarios
-build_property.ProjectDir = C:\Users\henri\OneDrive\Área de Trabalho\ControleDeFuncionarios\
+build_property.ProjectDir = /home/kalilpock/Documentos/c#/funcionarios/ControleDeFuncionarios/
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\henri\OneDrive\Área de Trabalho\ControleDeFuncionarios
+build_property.MSBuildProjectDirectory = /home/kalilpock/Documentos/c#/funcionarios/ControleDeFuncionarios
 build_property._RazorSourceGeneratorDebug = 
+
+[/home/kalilpock/Documentos/c\#/funcionarios/ControleDeFuncionarios/Views/Funcionario/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRnVuY2lvbmFyaW8vQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/kalilpock/Documentos/c\#/funcionarios/ControleDeFuncionarios/Views/Funcionario/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRnVuY2lvbmFyaW8vRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/kalilpock/Documentos/c\#/funcionarios/ControleDeFuncionarios/Views/Funcionario/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRnVuY2lvbmFyaW8vSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/kalilpock/Documentos/c\#/funcionarios/ControleDeFuncionarios/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
